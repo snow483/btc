@@ -2522,7 +2522,7 @@
                 // 비동기 함수 정의 (fetch 사용)
                 async function fetchFredApiData(seriesId) {
                   const apiKey = '117d103a00cd5ad3ba4bbb4a892bab84';  // FRED API 키를 여기에 넣어주세요.
-                  const url = `https://api.stlouisfed.org/fred/series/observations?series_id=${seriesId}&api_key=${apiKey}&file_type=json&observation_start=2013-05-20`;
+                  const url = `https://snow483.netlify.app/.netlify/functions/fetchFredData?seriesId=${seriesId}`;
                   try {
                       const response = await fetch(url, {
                           method: 'GET',

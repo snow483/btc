@@ -1,4 +1,4 @@
-const fetch = require('node-fetch');
+import fetch from 'node-fetch';  // ✅ require 대신 import 사용
 
 // FRED API의 기본 URL
 const FRED_API_URL = 'https://api.stlouisfed.org/fred/series/observations';
